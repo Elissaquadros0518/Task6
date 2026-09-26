@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/* laundry image left */ 
+#img-container { 
+    width: 50%; 
+    height: 100vh; 
+} 
+#laundry { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* form right */
+#form {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(225, 241, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#text {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#text h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#text h2 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+#form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+
+#email {
+    padding-bottom: 20px;
+}
+
+#form input {
+    width: 400px;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(236, 250, 255);
+}
+
+.forgot {
+    display: block;
+    width: 400px;
+    text-align: right;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+#btn {
+    background-color: rgb(126, 221, 255);
+    color: white;
+    width: 400px;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#regi {
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+#register {
+    text-decoration: none;
+}
