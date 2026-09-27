@@ -5,64 +5,70 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    display: flex;
-    height: 100vh;
-}
-
-/* laundry image left */ 
-#img-container { 
-    width: 50%; 
+.container { 
     height: 100vh; 
+    display: flex;
 } 
-#laundry { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+
+/*laundry image left*/ 
+.left{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+.left img {
+    width: 100%;
+    background-size: cover;
+    
+
 }
 
 /* form right */
-#form {
-    width: 50%;
-    height: 100vh;
+.right {
+    flex-basis: 50%;
     background-color: rgb(225, 241, 248);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+}
+
+.form-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 #text {
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 #text h1 {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 5px;
 }
 
 #text h2 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
 }
 
-
-#form label {
-    display: block;
+.right label {
     margin-bottom: 8px;
     font-size: 12px;
 }
 
 
-#email {
+#emailform {
     padding-bottom: 20px;
 }
+#passwordform {
+    padding-bottom: 5px;
+}
 
-#form input {
-    width: 400px;
-    height: 46px;
+.right input {
+    width:100%;
+    height: 50px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -70,8 +76,7 @@ body {
 }
 
 .forgot {
-    display: block;
-    width: 400px;
+    width: 100%;
     text-align: right;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -83,7 +88,7 @@ body {
 #btn {
     background-color: rgb(126, 221, 255);
     color: white;
-    width: 400px;
+    width: 100%;
     height: 52px;
     border: none;
     border-radius: 10px;
@@ -93,6 +98,7 @@ body {
 #regi {
     padding-top: 30px;
     font-size: 14px;
+    align-self: center;
 }
 
 #register {
